@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ice Hockey Score Keeper</string>
+    <string name="Button_Text_Goal">Goal</string>
+    <string name="Text_Goals">Goals</string>
+    <string name="Text_Home">Home</string>
+    <string name="Text_Away">Away</string>
+    <string name="penalties">Penalties</string>
+    <string name="text_plus_2_minutes">+2 minutes</string>
+    <string name="text_plus_5_minutes">+5 minutes</string>
+    <string name="text_reset_button">Reset</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.janiraiski.icehockeyscorekeeper.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextHeaderStyle"
+                android:text="@string/Text_Home" />
+
+            <TextView
+                style="@style/TextSubHeaderStyle"
+                android:text="@string/Text_Goals" />
+
+
+            <TextView
+                android:id="@+id/goals_home"
+                style="@style/TextAmount" />
+
+            <Button
+                style="@style/TextButton"
+                android:onClick="addHomeGoal"
+                android:text="@string/Button_Text_Goal" />
+
+            <TextView
+                style="@style/TextSecondSubHeaderStyle"
+                android:text="@string/penalties" />
+
+            <TextView
+                android:id="@+id/penalties_home"
+                style="@style/TextAmount" />
+
+            <Button
+                style="@style/TextButton"
+                android:onClick="addHomeTwoMinutes"
+                android:text="@string/text_plus_2_minutes" />
+
+            <Button
+                style="@style/TextButton"
+                android:onClick="addHomeFiveMinutes"
+                android:text="@string/text_plus_5_minutes" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextHeaderStyle"
+                android:text="@string/Text_Away" />
+
+            <TextView
+                style="@style/TextSubHeaderStyle"
+                android:text="@string/Text_Goals" />
+
+            <TextView
+                android:id="@+id/goals_away"
+                style="@style/TextAmount" />
+
+            <Button
+                style="@style/TextButton"
+                android:onClick="addAwayGoal"
+                android:text="@string/Button_Text_Goal" />
+
+            <TextView
+                style="@style/TextSecondSubHeaderStyle"
+                android:text="@string/penalties" />
+
+            <TextView
+                android:id="@+id/penalties_away"
+                style="@style/TextAmount" />
+
+            <Button
+                style="@style/TextButton"
+                android:onClick="addAwayTwoMinutes"
+                android:text="@string/text_plus_2_minutes" />
+
+            <Button
+                style="@style/TextButton"
+                android:onClick="addAwayFiveMinutes"
+                android:text="@string/text_plus_5_minutes" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/ResetButton"
+        android:onClick="reset"
+        android:text="@string/text_reset_button" />
+
+</RelativeLayout>
